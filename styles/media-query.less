@@ -1,0 +1,337 @@
+/* Media Query 992px */
+@media screen and (max-width: 992px) {
+	/*header*/
+	header{
+		.logo-sa{
+			padding: 30px 0 0 0;
+			width: 120px;
+		}
+
+		.logo-mff{
+			width: 120px;
+		}
+		.nav-social{
+			display: none;
+			position: fixed;
+			padding:30px 0 0 0;
+			right: 25px;
+			top: 159px;
+			z-index: 7;
+			ul{
+				li{
+					display: block;
+					a{
+						font-size: 30px;
+					}
+				}
+			}
+		}
+
+		.nav-primary {
+			height: 36px;
+			position: relative;
+			padding-top: 4px;
+			.nav-mobile{
+				display:block;
+				float: right;
+				margin-right: 10px;
+				.icon-bars{
+					color: @white;
+					font-size:28px;
+				}
+			}
+			ul{
+				background: @black;
+				border-bottom: 3px solid @gray01;
+				border-top: 3px solid @gray01;
+				display: none;
+				position: fixed;
+				top: 149px;
+				width: 100%;
+				z-index: 6;
+				li{
+					display:block;
+					padding: 7px;
+					a{
+						background: none !important;
+						color: @white;
+						font-size: 22px;
+						&:hover{
+							color:@white;
+						}
+						.icon{
+							display: none !important;
+						}
+					}
+				}
+			}
+		}
+	}
+	/* menu ativo */
+	#home{
+		.home{
+			color: @purple02;
+		}
+	}
+
+	#novidades{
+		.novidades{
+			color: @purple02;
+		}
+	}
+
+	#dicas{
+		.dicas{
+			color: @purple02;
+		}
+	}
+
+	#universo-marvel{
+		.universo-marvel{
+			color: @purple02;
+		}
+	}
+
+	#contato{
+		.contato{
+			color: @purple02;
+		}
+	}
+
+	
+	/*footer */
+	footer{
+		.social-mobile{
+			display: none;
+		}
+	}
+
+	/* common */
+	.bg-home, .bg-dicas, .bg-novidades, .bg-contato{
+		background-position: center 118px;
+	}
+
+	.info-alianca{
+		li{
+			h3{
+				font-size: 12px;
+			}
+
+			h4{
+				font-size: 12px;
+			}
+		}
+	}
+
+	/*whats app*/
+	.whatsapp{
+		ul{
+			li{
+				font-size: 13px;
+			}
+		}
+	}
+
+	/*accordion*/
+	#accordion{
+		.accordion-box{
+			img{
+				width: 45%;
+			}
+		}
+	}
+
+	.fixed {
+		.box-content {
+			height: 434px;
+		}
+	}
+}
+
+/* Media Query 767px */
+@media screen and (max-width: 767px) {
+	footer{
+		.nav-footer-mobile{
+			display: none;
+		}
+		.download-mobile{
+			display: none;
+		}
+
+		.dev-mobile{
+			float: left;
+			text-align: center;
+			width: 50%;
+			h3{
+				font-size: 18px;
+			}
+			.logo-marvel{
+				width: 66px;
+			}
+			.logo-netmarble{
+				width: 53px;
+			}
+			.logo-foorks{
+				width: 100px;
+			}
+		}
+	}
+
+	/* contato */
+	#send, #notsend, #alert_box{
+		font-size: 10px;
+	}
+	.fixed {
+		.box-content {
+			height: auto;
+		}
+	}
+
+	/* promo */
+	.nav-promo {
+		display: block;
+		li {
+			display: block;
+			margin-bottom: 10px;
+			width: 100%;
+		}
+	}
+}
+
+/* Media Query 600px */
+@media screen and (max-width: 600px) {
+	/*header*/
+	header{
+		position: fixed;
+		top: 0;
+		width: 100%;
+		z-index: 5;
+		.logo-sa{
+			left: 0;
+			position: absolute;
+			top: 52px;
+			width: 67px;
+			z-index: 6;
+		}
+
+		.logo-mff{
+			width: 90px;
+		}
+		.nav-primary {
+			ul {
+				top: 130px;
+			}
+		}
+		.nav-social {
+			top: 138px;
+		}
+	}
+
+	/* common*/
+	body{
+		padding-top: 145px!important;
+	}
+	/*accordion*/
+	#accordion{
+		.accordion-box{
+			img{
+				width: 100%;
+			}
+		}
+	}
+
+	/*novidades*/
+	.news-text{
+		p{
+			font-size: 16px !important;
+		}
+		.text-featured{
+			font-size: 22px !important;
+		}
+	}
+	.box-content {
+		&.banner {
+			img {
+				display: none;
+			}
+			.banner-mobile {
+				display: block;
+			}
+		}
+	}
+}
+
+/* Media Query 467px */
+@media screen and (max-width: 467px) {
+	/*whats app*/
+	.whatsapp{
+		ul{
+			li{
+				display: block !important;
+				font-size: 16px;
+				float: none !important;
+				margin: 0 0 10px 0;
+				text-align: center;
+				width: 100% !important;
+			}
+		}
+	}
+
+	/*informações aliança */
+	.info-alianca{
+		ul{
+			li{
+				float: none !important;
+				div{
+					img{
+						width: 30% !important;
+					}
+				}
+			}
+		}
+	}
+}
+
+/* Media Query 360px */
+@media screen and (max-width: 360px) {
+
+	/*header*/
+	header{
+		.logo-sa{
+			top: 36px;
+		}
+
+		.logo-mff{
+			width: 67px;
+		}
+
+		.nav-primary {
+			ul {
+				top: 123px;
+			}
+		}
+		.nav-social {
+			top: 132px;
+		}
+	}
+
+	/*footer */
+	footer{
+		.dev-mobile{
+			margin-bottom: 20px;
+			text-align: center;
+			width: 100%;
+			h3{
+				font-size: 18px;
+			}
+		}
+	}
+
+	/*accordion */
+	#accordion{
+		h3{
+			font-size: 18px;
+		}
+	}
+
+}
